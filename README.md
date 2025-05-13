@@ -1,4 +1,4 @@
-For Bayesian estimation and forecasting of mixed-frequency Bayesian VAR models# Nowcasting and Forecasting German House Prices
+# Nowcasting and Forecasting German House Prices
 
 This repository contains code for forecasting German housing prices using mixed frequency time series models such as MIDAS. The project is based on a master's thesis.
 
