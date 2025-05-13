@@ -1,6 +1,6 @@
 # Nowcasting and Forecasting German House Prices
 
-This repository contains code for forecasting German housing prices using mixed frequency time series models such as MIDAS. The project is based on a master's thesis.
+This repository contains code for forecasting German housing prices using mixed-frequency time series models.
 
 ---
 
