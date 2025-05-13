@@ -31,6 +31,8 @@ This repository includes the core code used to data preprocessing, modelling and
 - **`mfbvar` (v0.5.6)** – For Bayesian estimation and forecasting of mixed-frequency Bayesian VAR models
 - **`RJDemetra` (v0.2.6)** – Interface to *JDemetra+* for seasonal adjustment (used by the European Central Bank)
 
+---
+
 ## Data
 
 
