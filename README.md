@@ -16,7 +16,7 @@ This repository includes the core code used to data preprocessing, modelling and
 
 ## Tools
 
-- **Language**: 'R'
+- **Language**: `R`
 - **Models**:
   - MIDAS (Mixed-Data Sampling)
   - AR-MIDAS (AutoRegressive MIDAS)
