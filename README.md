@@ -10,7 +10,7 @@ This project implements Mixed-Data Sampling (MIDAS) and Mixed-Frequency VAR (MF-
 
 Forecasts are generated using both single-indicator and combinated models across two sample periods—before and after the COVID-19 economic crisis. Results show that MF-VAR provides the most accurate nowcasts, while AR-MIDAS and U-MIDAS perform better over longer forecast horizons.
 
-This repository includes the core code used to data preprocessing, modelling and model evaluation.
+This project was completed as part of a master's thesis in the UA Ruhr Joint Programme – TU Dortmund, Ruhr University Bochum, University of Duisburg-Essen.
 
 ---
 
