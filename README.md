@@ -1,18 +1,27 @@
 # Nowcasting and Forecasting German House Prices
 
-This repository contains code for forecasting German housing prices using mixed-frequency time series models.
+This repository contains the working paper and code for forecasting German house prices using mixed-frequency time series models.
+
+**Working paper:** [Nowcasting and Forecasting German House Prices](WorkingPaper.pdf)
 
 ---
 
 ## Overview
 
-This project implements Mixed-Data Sampling (MIDAS) and Mixed-Frequency VAR (MF-VAR) models for nowcasting and forecasting German house prices. The models use high-frequency economic indicators (monthly and daily) to produce timely updates of the quarterly German House Price Index (HPI).
+This project implements Mixed-Data Sampling (MIDAS) and Bayesian Mixed-Frequency VAR (MF-VAR) models for nowcasting and forecasting German house prices. The models use high-frequency economic indicators (monthly and daily) to produce timely updates of the quarterly German House Price Index (HPI).
 
-Forecasts are generated using both single-indicator and combinated models across two sample periods—before and after the COVID-19 economic crisis. Results show that MF-VAR provides the most accurate nowcasts, while AR-MIDAS and U-MIDAS perform better over longer forecast horizons.
+Forecasts are generated from both single-indicator and combined models, evaluated recursively in a pseudo-real-time framework that replicates the actual publication lag of each series, and benchmarked against a quarterly AR model. Two evaluation samples are used: one ending before the COVID-19 economic crisis and one after.
 
 This project was completed as part of a master's thesis in the UA Ruhr Joint Programme – TU Dortmund, Ruhr University Bochum, University of Duisburg-Essen.
 
 ---
+
+## Key Findings
+
+- The Bayesian MF-VAR produces the most accurate nowcasts (h = 0).
+- AR-MIDAS performs best at longer horizons (h = 1 to 8 quarters), with U-MIDAS statistically comparable in most cases and much cheaper to estimate.
+- Mixed-frequency models outperform the AR benchmark most clearly in the sample including the COVID-19 period, that is, when uncertainty is high.
+- Combining all predictors improves the MF-VAR but degrades the MIDAS models.
 
 ## Tools
 
@@ -21,7 +30,7 @@ This project was completed as part of a master's thesis in the UA Ruhr Joint Pro
   - MIDAS (Mixed-Data Sampling)
   - AR-MIDAS (AutoRegressive MIDAS)
   - U-MIDAS (Unrestricted MIDAS)
-  - MF-VAR (Mixed-Frequency VAR)
+  - Bayesian MF-VAR (Mixed-Frequency VAR)
 
 ---
 
